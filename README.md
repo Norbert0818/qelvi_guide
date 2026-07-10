@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Qelvi — ghid mobil de utilizare
 
 Site static, mobile-first, în limba română. Nu are dependențe externe și poate fi publicat direct pe Vercel.
@@ -41,3 +42,21 @@ git push -u origin main
 ## Modificarea textului
 
 Caută în `index.html` secțiunile cu ID-urile `pasul-1` ... `pasul-11`.
+=======
+# Qelvi guide
+
+## Local development
+
+```bash
+npm install
+npm run dev
+```
+
+Open the URL printed by Vite, normally http://localhost:5173.
+
+## Vercel
+
+Import the repository. Vercel should detect Vite automatically.
+- Build command: npm run build
+- Output directory: dist
+>>>>>>> ba18b830d6be211c67300bdad2a9296e937ed99a
