@@ -1,0 +1,12 @@
+{
+  "name": "Qelvi — Ghid de utilizare",
+  "short_name": "Qelvi Ghid",
+  "description": "Ghid mobil, pas cu pas, pentru aplicația Qelvi.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f3f8fc",
+  "theme_color": "#0f7fd1",
+  "icons": [
+    { "src": "assets/icons/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ro">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f7fd1" />
+  <meta name="description" content="Ghid mobil, pas cu pas, pentru configurarea și utilizarea aplicației Qelvi." />
+  <title>Qelvi — Ghid de utilizare</title>
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#ghid">Sari la ghid</a>
+
+  <header class="site-header" aria-label="Antet principal">
+    <a class="brand" href="#top" aria-label="Qelvi, începutul paginii">
+      <img src="assets/icons/qelvi-mark.svg" width="42" height="42" alt="" />
+      <span>Qelvi</span>
+    </a>
+    <div class="header-meta"><span class="status-dot"></span> Ghid în 11 pași</div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow">GHID RAPID • MOBIL</span>
+        <h1 id="hero-title">Configurează, pornește și salvează corect fiecare cursă</h1>
+        <p>Urmează pașii în ordine. Înainte să apeși <strong>START</strong>, completează datele din <strong>Settings</strong> și acordă toate permisiunile cerute.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#pasul-1">Începe ghidul</a>
+          <button class="button button-secondary" type="button" data-open-overview>Vezi pe scurt</button>
+        </div>
+      </div>
+      <div class="hero-phone" aria-hidden="true">
+        <img src="assets/screens/01-home.webp" alt="" />
+      </div>
+    </section>
+
+    <section class="quick-check" aria-label="Rezumatul procesului">
+      <div><span>1</span><strong>Settings</strong><small>Completează datele</small></div>
+      <div><span>2</span><strong>Permisiuni</strong><small>Acceptă accesul</small></div>
+      <div><span>3</span><strong>START / STOP</strong><small>Înregistrează cursa</small></div>
+      <div><span>4</span><strong>Save + Save</strong><small>Salvează de două ori</small></div>
+      <div><span>5</span><strong>Archive</strong><small>Arhivează sau exportă</small></div>
+    </section>
+
+    <div class="progress-shell" aria-hidden="true">
+      <div class="progress-track"><div class="progress-value" id="progress-value"></div></div>
+      <span id="progress-label">Pasul 1 din 11</span>
+    </div>
+
+    <section id="ghid" class="guide" aria-label="Ghid de utilizare Qelvi">
+      <article class="step" id="pasul-1" data-step="1">
+        <div class="step-copy">
+          <span class="step-number">Pasul 1</span>
+          <h2>Pornește de pe pagina principală</h2>
+          <p>Aceasta este pagina de început. <strong>Nu apăsa încă START.</strong> Mai întâi intră în tab-ul <strong>Settings</strong> din bara de jos.</p>
+          <div class="instruction"><b>Acțiune:</b> apasă pictograma <strong>Settings</strong> din colțul dreapta-jos.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/01-home.webp" data-lightbox-alt="Pagina principală Qelvi, cu tab-ul Settings indicat">
+          <img src="assets/screens/01-home.webp" loading="eager" alt="Pagina principală Qelvi înainte de configurare" />
+          <span class="marker" style="--x:86%;--y:90%" aria-hidden="true">1</span>
+          <figcaption><span>1</span> Deschide <strong>Settings</strong>.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step" id="pasul-2" data-step="2">
+        <div class="step-copy">
+          <span class="step-number">Pasul 2</span>
+          <h2>Completează toate datele obligatorii</h2>
+          <p>Datele introduse aici vor apărea în fișele zilnice, în istoricul curselor și în fișierul Excel exportat.</p>
+          <ul class="check-list">
+            <li><strong>Active Event Name</strong> — numele evenimentului</li>
+            <li><strong>Car Plate Number</strong> — numărul de înmatriculare</li>
+            <li><strong>Driver Name</strong> — numele șoferului</li>
+            <li><strong>Vehicle Type</strong> și <strong>Fuel Type</strong></li>
+          </ul>
+          <div class="tip"><b>Opțional:</b> păstrează activ „Display city name” pentru afișarea localității în trasee.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/02-settings.webp" data-lightbox-alt="Pagina Settings cu datele obligatorii">
+          <img src="assets/screens/02-settings.webp" loading="lazy" alt="Formularul Settings din aplicația Qelvi" />
+          <span class="marker" style="--x:51%;--y:46%" aria-hidden="true">1</span>
+          <span class="marker" style="--x:86%;--y:90%" aria-hidden="true">2</span>
+          <figcaption><span>1</span> Completează câmpurile. <span>2</span> Revino la <strong>Sheets</strong>.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step" id="pasul-3" data-step="3">
+        <div class="step-copy">
+          <span class="step-number">Pasul 3</span>
+          <h2>Revino la pagina principală și apasă START</h2>
+          <p>După completarea setărilor, întoarce-te în tab-ul <strong>Sheets</strong> și pornește monitorizarea traseului.</p>
+          <div class="instruction"><b>Acțiune:</b> apasă <strong>START</strong>. La prima utilizare vor apărea mai multe permisiuni Android.</div>
+          <div class="warning"><b>Important:</b> acceptă permisiunile în ordinea în care apar. Altfel, trackingul în fundal poate să nu funcționeze.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/03-start.webp" data-lightbox-alt="Butonul START de pe pagina principală">
+          <img src="assets/screens/03-start.webp" loading="lazy" alt="Pagina principală Qelvi cu butonul START" />
+          <span class="marker" style="--x:29%;--y:32%" aria-hidden="true">1</span>
+          <figcaption><span>1</span> Apasă <strong>START</strong>.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step" id="pasul-4" data-step="4">
+        <div class="step-copy">
+          <span class="step-number">Pasul 4</span>
+          <h2>Acceptă accesul la locație în fundal</h2>
+          <p>Qelvi are nevoie de această permisiune pentru a continua măsurarea distanței și când aplicația nu este deschisă pe ecran.</p>
+          <div class="instruction"><b>Acțiune:</b> în fereastra „Background Location Access”, apasă <strong>Accept</strong>.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/04-background-location.webp" data-lightbox-alt="Mesajul Background Location Access">
+          <img src="assets/screens/04-background-location.webp" loading="lazy" alt="Dialog Qelvi pentru accesul la locație în fundal" />
+          <span class="marker" style="--x:82%;--y:61%" aria-hidden="true">1</span>
+          <figcaption><span>1</span> Alege <strong>Accept</strong>.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step" id="pasul-5" data-step="5">
+        <div class="step-copy">
+          <span class="step-number">Pasul 5</span>
+          <h2>Permite notificările</h2>
+          <p>Notificările indică faptul că aplicația rulează și monitorizează cursa, inclusiv atunci când Qelvi este în fundal.</p>
+          <div class="instruction"><b>Acțiune:</b> apasă <strong>Allow</strong>.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/05-notifications.webp" data-lightbox-alt="Permisiunea Android pentru notificări">
+          <img src="assets/screens/05-notifications.webp" loading="lazy" alt="Dialog Android pentru notificările Qelvi" />
+          <span class="marker" style="--x:50%;--y:75%" aria-hidden="true">1</span>
+          <figcaption><span>1</span> Alege <strong>Allow</strong>.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step" id="pasul-6" data-step="6">
+        <div class="step-copy">
+          <span class="step-number">Pasul 6</span>
+          <h2>Permite locația precisă</h2>
+          <p>În fereastra Android, păstrează selectată opțiunea <strong>Precise</strong> și permite accesul inițial la locație.</p>
+          <div class="instruction"><b>Acțiune:</b> selectează <strong>While using the app</strong>.</div>
+          <div class="tip">După acest pas, telefonul poate deschide automat pagina de setări pentru permisiunea permanentă.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/06-location-dialog.webp" data-lightbox-alt="Permisiunea de locație precisă Android">
+          <img src="assets/screens/06-location-dialog.webp" loading="lazy" alt="Dialog Android pentru accesul Qelvi la locație" />
+          <span class="marker" style="--x:23%;--y:57%" aria-hidden="true">1</span>
+          <span class="marker" style="--x:50%;--y:75%" aria-hidden="true">2</span>
+          <figcaption><span>1</span> Precise. <span>2</span> While using the app.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step" id="pasul-7" data-step="7">
+        <div class="step-copy">
+          <span class="step-number">Pasul 7</span>
+          <h2>Activează „Allow all the time”</h2>
+          <p>Aceasta este setarea critică pentru monitorizarea traseului atunci când ecranul este blocat sau aplicația este în fundal.</p>
+          <div class="instruction"><b>Acțiune:</b> selectează <strong>Allow all the time</strong> și păstrează activ <strong>Use precise location</strong>.</div>
+          <div class="warning"><b>Dacă pagina nu se deschide automat:</b><br />Settings telefon → Apps → Qelvi → Permissions → Location → Allow all the time.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/07-location-settings.webp" data-lightbox-alt="Setarea Allow all the time în Android">
+          <img src="assets/screens/07-location-settings.webp" loading="lazy" alt="Pagina Android Location permission pentru Qelvi" />
+          <span class="marker" style="--x:21%;--y:33%" aria-hidden="true">1</span>
+          <span class="marker" style="--x:86%;--y:55%" aria-hidden="true">2</span>
+          <figcaption><span>1</span> Allow all the time. <span>2</span> Precise location activă.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step" id="pasul-8" data-step="8">
+        <div class="step-copy">
+          <span class="step-number">Pasul 8</span>
+          <h2>Folosește START, STOP și meniul cu trei puncte</h2>
+          <p>După acordarea permisiunilor, cronometrul și distanța încep să se actualizeze.</p>
+          <div class="control-grid">
+            <div><b>START</b><span>Pornește o cursă nouă.</span></div>
+            <div><b>STOP</b><span>Încheie cursa și salvează traseul zilei.</span></div>
+            <div><b>⋮</b><span>Deschide opțiunile evenimentului.</span></div>
+          </div>
+          <div class="warning"><b>Nu închide cursa din sistem.</b> La final, folosește întotdeauna butonul <strong>STOP</strong>.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/08-controls.webp" data-lightbox-alt="Comenzile START, STOP și meniul cu trei puncte">
+          <img src="assets/screens/08-controls.webp" loading="lazy" alt="Pagina principală Qelvi cu comenzile cursei" />
+          <span class="marker" style="--x:29%;--y:32%" aria-hidden="true">1</span>
+          <span class="marker" style="--x:72%;--y:32%" aria-hidden="true">2</span>
+          <span class="marker" style="--x:94%;--y:46%" aria-hidden="true">3</span>
+          <figcaption><span>1</span> START. <span>2</span> STOP. <span>3</span> Meniul evenimentului.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step" id="pasul-9" data-step="9">
+        <div class="step-copy">
+          <span class="step-number">Pasul 9</span>
+          <h2>Gestionează ziua și evenimentul</h2>
+          <p>După apăsarea butonului STOP, ziua apare sub forma unei fișe cu data, mașina, șoferul, combustibilul, numărul curselor și totalul de kilometri.</p>
+          <ul class="action-list">
+            <li><b>Add Manual</b><span>Adaugă manual o cursă sau o distanță.</span></li>
+            <li><b>Archive Event</b><span>Mută întregul eveniment în arhivă.</span></li>
+            <li><b>Delete Event</b><span>Șterge evenimentul și datele sale.</span></li>
+          </ul>
+          <div class="instruction"><b>Pentru editare:</b> deschide fișa zilei sau folosește pictograma creion.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/09-menu-day.webp" data-lightbox-alt="Meniul evenimentului și fișa unei zile înregistrate">
+          <img src="assets/screens/09-menu-day.webp" loading="lazy" alt="Fișă zilnică Qelvi și meniul cu Add Manual, Archive Event și Delete Event" />
+          <span class="marker" style="--x:72%;--y:51%" aria-hidden="true">1</span>
+          <span class="marker" style="--x:72%;--y:57%" aria-hidden="true">2</span>
+          <span class="marker" style="--x:72%;--y:63%" aria-hidden="true">3</span>
+          <span class="marker" style="--x:49%;--y:78%" aria-hidden="true">4</span>
+          <figcaption><span>1</span> Add Manual. <span>2</span> Archive. <span>3</span> Delete. <span>4</span> Fișa zilei.</figcaption>
+        </figure>
+      </article>
+
+      <article class="step step-wide" id="pasul-10" data-step="10">
+        <div class="step-copy">
+          <span class="step-number">Pasul 10</span>
+          <h2>Editează traseele și salvează de două ori</h2>
+          <p>Poți modifica data, datele generale, locul și ora plecării, locul și ora sosirii, precum și numărul de kilometri.</p>
+          <ol class="save-flow">
+            <li>Deschide <strong>Trip Routes</strong>.</li>
+            <li>Editează cursa sau apasă <strong>Add row</strong>.</li>
+            <li>Apasă <strong>Save</strong> în pagina „Trip rows”.</li>
+            <li>Revino și apasă din nou <strong>Save</strong> în pagina „Edit day sheet”.</li>
+          </ol>
+          <div class="critical"><b>Foarte important:</b> fără al doilea Save, modificările pot să nu fie păstrate.</div>
+        </div>
+        <div class="dual-shots">
+          <figure class="phone-shot" data-lightbox-src="assets/screens/10-edit-day.webp" data-lightbox-alt="Pagina Edit day sheet">
+            <img src="assets/screens/10-edit-day.webp" loading="lazy" alt="Pagina Qelvi Edit day sheet" />
+            <span class="marker" style="--x:51%;--y:48%" aria-hidden="true">1</span>
+            <span class="marker" style="--x:89%;--y:6%" aria-hidden="true">4</span>
+            <figcaption><span>1</span> Trip Routes. <span>4</span> Al doilea Save.</figcaption>
+          </figure>
+          <figure class="phone-shot" data-lightbox-src="assets/screens/11-trip-rows.webp" data-lightbox-alt="Pagina Trip rows cu Save și Add row">
+            <img src="assets/screens/11-trip-rows.webp" loading="lazy" alt="Pagina Qelvi Trip rows" />
+            <span class="marker" style="--x:89%;--y:6%" aria-hidden="true">3</span>
+            <span class="marker" style="--x:84%;--y:88%" aria-hidden="true">2</span>
+            <figcaption><span>2</span> Add row. <span>3</span> Primul Save.</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="step" id="pasul-11" data-step="11">
+        <div class="step-copy">
+          <span class="step-number">Pasul 11</span>
+          <h2>Arhivează, restaurează sau exportă</h2>
+          <p>Evenimentele arhivate se găsesc în tab-ul <strong>Archive</strong>. Aici vezi totalul de zile, curse și kilometri.</p>
+          <ul class="action-list">
+            <li><b>Pictograma verde</b><span>Restaurează evenimentul și îl face din nou activ.</span></li>
+            <li><b>Coșul roșu</b><span>Șterge definitiv evenimentul.</span></li>
+            <li><b>Descărcare</b><span>Exportă datele evenimentelor arhivate.</span></li>
+          </ul>
+          <div class="tip">Pe pagina principală poți folosi și „Export Active Event to Excel” pentru evenimentul activ.</div>
+        </div>
+        <figure class="phone-shot" data-lightbox-src="assets/screens/12-archive.webp" data-lightbox-alt="Pagina Archive cu restaurare, ștergere și export">
+          <img src="assets/screens/12-archive.webp" loading="lazy" alt="Istoricul evenimentelor din Qelvi" />
+          <span class="marker" style="--x:90%;--y:14%" aria-hidden="true">1</span>
+          <span class="marker" style="--x:71%;--y:29%" aria-hidden="true">2</span>
+          <span class="marker" style="--x:83%;--y:29%" aria-hidden="true">3</span>
+          <figcaption><span>1</span> Export. <span>2</span> Restaurare. <span>3</span> Ștergere.</figcaption>
+        </figure>
+      </article>
+    </section>
+
+    <section class="finish-card">
+      <span class="finish-icon">✓</span>
+      <div>
+        <h2>Configurarea este finalizată</h2>
+        <p>La fiecare cursă: verifică Settings, pornește cu START, oprește cu STOP și salvează toate modificările.</p>
+      </div>
+      <a class="button button-primary" href="#pasul-1">Reia ghidul</a>
+    </section>
+  </main>
+
+  <footer>
+    <img src="assets/icons/qelvi-mark.svg" width="34" height="34" alt="" />
+    <p><strong>Qelvi — Ghid de utilizare</strong><br /><span>Instrucțiuni optimizate pentru telefon.</span></p>
+  </footer>
+
+  <nav class="mobile-nav" aria-label="Navigare între pași">
+    <button type="button" id="prev-step" aria-label="Pasul anterior">← <span>Înapoi</span></button>
+    <div><small>Pasul</small><strong id="mobile-step-number">1 / 11</strong></div>
+    <button type="button" id="next-step" aria-label="Pasul următor"><span>Următorul</span> →</button>
+  </nav>
+
+  <dialog class="overview-dialog" id="overview-dialog">
+    <button class="dialog-close" type="button" data-close-dialog aria-label="Închide">×</button>
+    <span class="eyebrow">REZUMAT</span>
+    <h2>Procesul complet</h2>
+    <ol>
+      <li>Intră în Settings și completează datele.</li>
+      <li>Revino în Sheets și apasă START.</li>
+      <li>Acceptă accesul în fundal, notificările și locația.</li>
+      <li>Activează „Allow all the time”.</li>
+      <li>Oprește cursa cu STOP.</li>
+      <li>Editează traseele și apasă Save de două ori.</li>
+      <li>Arhivează, restaurează sau exportă evenimentul.</li>
+    </ol>
+    <a class="button button-primary" href="#pasul-1" data-close-dialog>Începe cu Pasul 1</a>
+  </dialog>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" type="button" aria-label="Închide imaginea">×</button>
+    <img id="lightbox-image" alt="" />
+    <p id="lightbox-caption"></p>
+  </dialog>
+</body>
+</html>
