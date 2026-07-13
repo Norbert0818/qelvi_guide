@@ -169,3 +169,38 @@ function initLightbox() {
     }
   });
 }
+
+// A "Vezi pe scurt" (Overview) felugró ablak kezelése
+document.addEventListener("DOMContentLoaded", () => {
+  const overviewDialog = document.getElementById("overview-dialog");
+  const openOverviewBtn = document.querySelector("[data-open-overview]");
+  const closeOverviewBtns = document.querySelectorAll("[data-close-dialog]");
+
+  // Ha létezik a gomb és az ablak ezen az oldalon, akkor rákötjük a kattintást
+  if (overviewDialog && openOverviewBtn) {
+    // Megnyitás
+    openOverviewBtn.addEventListener("click", () => {
+      overviewDialog.showModal();
+    });
+
+    // Bezárás (az X gombon vagy a belső linken)
+    closeOverviewBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        overviewDialog.close();
+      });
+    });
+
+    // Opcionális: Bezárás, ha a sötét háttérre kattint a felhasználó
+    overviewDialog.addEventListener("click", (e) => {
+      const dialogDimensions = overviewDialog.getBoundingClientRect();
+      if (
+        e.clientX < dialogDimensions.left ||
+        e.clientX > dialogDimensions.right ||
+        e.clientY < dialogDimensions.top ||
+        e.clientY > dialogDimensions.bottom
+      ) {
+        overviewDialog.close();
+      }
+    });
+  }
+});
