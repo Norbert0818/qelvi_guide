@@ -61,7 +61,8 @@
           </div>
         </div>
         <div class="hero-phone" aria-hidden="true">
-          <img src="assets/screens/01-home.webp" alt="" />
+          <!-- Frissítve az új főoldal képére -->
+          <img src="assets/screens/update_1.jpeg" alt="" />
         </div>
       </section>
 
@@ -79,12 +80,11 @@
           ><small>Înregistrează cursa</small>
         </div>
         <div>
-          <span>4</span><strong>Save + Save</strong
-          ><small>Salvează de două ori</small>
+          <span>4</span><strong>Share</strong><small>Trimite datele</small>
         </div>
         <div>
           <span>5</span><strong>Archive</strong
-          ><small>Arhivează sau exportă</small>
+          ><small>Arhivează evenimentul</small>
         </div>
       </section>
 
@@ -92,7 +92,8 @@
         <div class="progress-track">
           <div class="progress-value" id="progress-value"></div>
         </div>
-        <span id="progress-label">Pasul 1 din 11</span>
+        <!-- Frissítve 12 lépésre -->
+        <span id="progress-label">Pasul 1 din 12</span>
       </div>
 
       <section id="ghid" class="guide" aria-label="Ghid de utilizare Qelvi">
@@ -112,11 +113,11 @@
           </div>
           <figure
             class="phone-shot"
-            data-lightbox-src="assets/screens/01-home.webp"
+            data-lightbox-src="assets/screens/update_1.jpeg"
             data-lightbox-alt="Pagina principală Qelvi, cu tab-ul Settings indicat"
           >
             <img
-              src="assets/screens/01-home.webp"
+              src="assets/screens/update_1.jpeg"
               loading="eager"
               alt="Pagina principală Qelvi înainte de configurare"
             />
@@ -194,15 +195,15 @@
           </div>
           <figure
             class="phone-shot"
-            data-lightbox-src="assets/screens/03-start.webp"
+            data-lightbox-src="assets/screens/update_1.jpeg"
             data-lightbox-alt="Butonul START de pe pagina principală"
           >
             <img
-              src="assets/screens/03-start.webp"
+              src="assets/screens/update_1.jpeg"
               loading="lazy"
               alt="Pagina principală Qelvi cu butonul START"
             />
-            <span class="marker" style="--x: 29%; --y: 32%" aria-hidden="true"
+            <span class="marker" style="--x: 29%; --y: 36%" aria-hidden="true"
               >1</span
             >
             <figcaption>
@@ -355,7 +356,7 @@
         <article class="step" id="pasul-8" data-step="8">
           <div class="step-copy">
             <span class="step-number">Pasul 8</span>
-            <h2>Folosește START, STOP și meniul cu trei puncte</h2>
+            <h2>Folosește START, STOP și butoanele de Export</h2>
             <p>
               După acordarea permisiunilor, cronometrul și distanța încep să se
               actualizeze.
@@ -363,9 +364,11 @@
             <div class="control-grid">
               <div><b>START</b><span>Pornește o cursă nouă.</span></div>
               <div>
-                <b>STOP</b><span>Încheie cursa și salvează traseul zilei.</span>
+                <b>STOP</b><span>Încheie cursa și salvează traseul.</span>
               </div>
-              <div><b>⋮</b><span>Deschide opțiunile evenimentului.</span></div>
+              <div>
+                <b>Share</b><span>Trimite Excel-ul pe WhatsApp/Email.</span>
+              </div>
             </div>
             <div class="warning">
               <b>Nu închide cursa din sistem.</b> La final, folosește
@@ -374,26 +377,25 @@
           </div>
           <figure
             class="phone-shot"
-            data-lightbox-src="assets/screens/08-controls.webp"
-            data-lightbox-alt="Comenzile START, STOP și meniul cu trei puncte"
+            data-lightbox-src="assets/screens/update_1.jpeg"
+            data-lightbox-alt="Comenzile START, STOP, Export și Share"
           >
             <img
-              src="assets/screens/08-controls.webp"
+              src="assets/screens/update_1.jpeg"
               loading="lazy"
-              alt="Pagina principală Qelvi cu comenzile cursei"
+              alt="Pagina principală Qelvi cu noile butoane"
             />
-            <span class="marker" style="--x: 29%; --y: 32%" aria-hidden="true"
+            <span class="marker" style="--x: 29%; --y: 36%" aria-hidden="true"
               >1</span
             >
-            <span class="marker" style="--x: 72%; --y: 32%" aria-hidden="true"
+            <span class="marker" style="--x: 72%; --y: 36%" aria-hidden="true"
               >2</span
             >
-            <span class="marker" style="--x: 94%; --y: 46%" aria-hidden="true"
+            <span class="marker" style="--x: 75%; --y: 55%" aria-hidden="true"
               >3</span
             >
             <figcaption>
-              <span>1</span> START. <span>2</span> STOP. <span>3</span> Meniul
-              evenimentului.
+              <span>1</span> START. <span>2</span> STOP. <span>3</span> Share.
             </figcaption>
           </figure>
         </article>
@@ -455,9 +457,67 @@
           </figure>
         </article>
 
-        <article class="step step-wide" id="pasul-10" data-step="10">
+        <!-- Új 10-es lépés a küldéshez (Share / Send) -->
+        <article class="step" id="pasul-10" data-step="10">
           <div class="step-copy">
             <span class="step-number">Pasul 10</span>
+            <h2>Trimite datele cu butonul Share</h2>
+            <p>
+              Noua funcție <strong>Share</strong> îți permite să trimiți instant
+              fișierul Excel generat direct către WhatsApp, Email sau orice altă
+              aplicație de mesagerie instalată pe telefon.
+            </p>
+            <ul class="action-list">
+              <li>
+                <b>Send full event</b
+                ><span
+                  >Bifează pentru a trimite toate zilele din evenimentul
+                  curent.</span
+                >
+              </li>
+              <li>
+                <b>Selecție individuală</b
+                ><span
+                  >Debifează "Send full event" și alege doar zilele specifice
+                  (ex: 13.07.2026).</span
+                >
+              </li>
+            </ul>
+            <div class="instruction">
+              <b>Acțiune:</b> Selectează zilele dorite și apasă pe butonul
+              <strong>Send</strong> din partea de jos pentru a alege aplicația
+              de destinație.
+            </div>
+          </div>
+          <figure
+            class="phone-shot"
+            data-lightbox-src="assets/screens/update_2.jpeg"
+            data-lightbox-alt="Meniul de selecție a zilelor pentru trimitere"
+          >
+            <img
+              src="assets/screens/update_2.jpeg"
+              loading="lazy"
+              alt="Fereastra What do you want to send? din Qelvi"
+            />
+            <span class="marker" style="--x: 85%; --y: 53%" aria-hidden="true"
+              >1</span
+            >
+            <span class="marker" style="--x: 85%; --y: 63%" aria-hidden="true"
+              >2</span
+            >
+            <span class="marker" style="--x: 50%; --y: 89%" aria-hidden="true"
+              >3</span
+            >
+            <figcaption>
+              <span>1</span> Tot evenimentul. <span>2</span> Selectare zi.
+              <span>3</span> Butonul Send.
+            </figcaption>
+          </figure>
+        </article>
+
+        <article class="step step-wide" id="pasul-11" data-step="11">
+          <div class="step-copy">
+            <span class="step-number">Pasul 11</span>
             <h2>Editează traseele și salvează de două ori</h2>
             <p>
               Poți modifica data, datele generale, locul și ora plecării, locul
@@ -521,9 +581,9 @@
           </div>
         </article>
 
-        <article class="step" id="pasul-11" data-step="11">
+        <article class="step" id="pasul-12" data-step="12">
           <div class="step-copy">
-            <span class="step-number">Pasul 11</span>
+            <span class="step-number">Pasul 12</span>
             <h2>Arhivează, restaurează sau exportă</h2>
             <p>
               Evenimentele arhivate se găsesc în tab-ul
@@ -602,7 +662,8 @@
         ← <span>Înapoi</span>
       </button>
       <div>
-        <small>Pasul</small><strong id="mobile-step-number">1 / 11</strong>
+        <!-- Frissítve 12 lépésre -->
+        <small>Pasul</small><strong id="mobile-step-number">1 / 12</strong>
       </div>
       <button type="button" id="next-step" aria-label="Pasul următor">
         <span>Următorul</span> →
@@ -626,6 +687,7 @@
         <li>Acceptă accesul în fundal, notificările și locația.</li>
         <li>Activează „Allow all the time”.</li>
         <li>Oprește cursa cu STOP.</li>
+        <li>Trimite datele generare cu funcția Share.</li>
         <li>Editează traseele și apasă Save de două ori.</li>
         <li>Arhivează, restaurează sau exportă evenimentul.</li>
       </ol>
